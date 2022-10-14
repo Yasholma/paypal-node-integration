@@ -24,7 +24,7 @@ app.post("/pay", async (req, res) => {
 
   try {
     const response = await axios.post(
-      `${baseUrl}/checkout/orders`,
+      `${baseUrl}/v2/checkout/orders`,
       {
         ...getPayload(PORT),
       },
